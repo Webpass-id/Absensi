@@ -1,0 +1,110 @@
+/* NAVBAR */
+.NAVBAR {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 0 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.logo-pkp {
+  width: 133px;
+  height: auto;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.login-bg {
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 0 30px;
+  margin-right: -25px;
+  background-color: #7981c0;
+}
+
+.user {
+  width: 60px;
+  height: 60px;
+  
+}
+
+.HOME {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #000;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .NAVBAR {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+  }
+
+  .login-bg {
+      justify-content: center;
+      padding: 10px;
+  }
+
+  .HOME {
+      font-size: 18px;
+      margin-left: 10px;
+  }
+
+  .logo-pkp {
+      width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .NAVBAR {
+    padding: 10px;
+}
+
+.logo-pkp {
+    width: 80px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.HOME {
+    font-size: 16px;
+    margin-right: 10px;
+    color: black;
+}
+
+.login-bg {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user {
+    width: 40px;
+    height: auto;
+}
+}

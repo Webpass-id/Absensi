@@ -1,0 +1,63 @@
+/* Layout Dasar */
+.main-content {
+    margin-left: 250px; /* Sesuai dengan lebar sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Responsif untuk tampilan kecil */
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 200px; /* Lebar sidebar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0; /* Sidebar akan tersembunyi */
+    }
+}
+
+/* Gaya Kartu Statistik */
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-primary .fa {
+    font-size: 2.5rem;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Grid Responsif */
+.row.g-4 .col-sm-6 {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 576px) {
+    .row.g-4 .col-sm-6 {
+        flex: 1 1 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .row.g-4 .col-xl-3 {
+        flex: 1 1 25%;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Sesuaikan dengan lebar sidebar Anda */
+    background-color: #333;
+    z-index: 100;
+}
